@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body class = "body">
+    
+    <form name = "formOne">
+    <div class = "container">
+        <div class="input">
+        <input type="text" name = "username" id="username" placeholder="Введите имя" minlength="2" maxlength="20" required>
+        <span class="error" id="usernameError"></span>
+        </div>
+
+
+    <div class="input">
+        <input type="email" name = "email" id="twoInput" placeholder="Введите электронную почту" required>
+        <span class="error" id="emailError"></span>
+    </div>
+    <div class="input">
+        <input type="number" name = "age" id="age" placeholder="Введите Ваш возраст" required>
+        <span class="error" id="ageError"></span>
+    </div>
+   
+        <div class="input">
+            <p>Укажите пол</p>
+            <input type="radio" name="radioOne" id = "radioOne" value="ж" checked />
+            <label for="radioOne">Женский</label>
+      
+            <input type="radio" name="radioOne" id = "radioTwo" value="m" />
+            <label for="radioTwo">Мужской</label>
+          </div>
+          <!-- select -->
+           <div class="input">
+          <label for="firstSelect" class="form__label">Выберите профессию:</label>
+          <select id="firstSelect" name="firstSelect" class="form__select" placeholder="Введите профессию" required>
+            <option value="Опция 1">Дизайнер</option>
+            <option value="Опция 2">Аналитик</option>
+            <option value="Опция 3">Лётчик</option>
+        </select>
+    </div>
+ <!-- select -->
+  <div class="input">
+ <input type="text" name = "password" id="fourInput" placeholder="Введите пароль" minlength="8" maxlength="20" pattern="[a-zA-Z0-9]+$" required>
+ <span class="error" id="passwordError"></span>
+</div>
+
+<!-- select -->
+ <div class="input">
+<label class="form__label">Согласны с правилами?</label>
+<input type="checkbox" name="agreeTerms" id="agreeTerms" class="form__checkbox">
+<label for="agreeTerms">Я согласен(-на) с правилами</label>
+<span class="error" id="termsError"></span>
+</div>
+
+<button name="submitBtn" id="submitBtn" type="submit" > Отправить</button>
+<!-- <button name="submitBtn" id="submitBtn" type="submit" disabled> Отправить</button> -->
+</div>
+<p id= 'errorMessage'></p>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
+

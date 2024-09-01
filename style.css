@@ -1,0 +1,24 @@
+
+
+.container{
+    margin: 0 auto;
+    width: 30%;
+    display: grid;
+    justify-content: center;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: auto;
+    background-color: mediumaquamarine;
+}
+.input{
+    padding-top: 10px;
+}
+#but{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.error {
+    color: red;
+    display: none;
+  }
